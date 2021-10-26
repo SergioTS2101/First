@@ -24,8 +24,17 @@
         android:id="@+id/girl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitStart"
-        android:src="@drawable/girl" />
+        android:scaleType="fitStart" />
+        <!--android:src="@drawable/girl" -->
+
+    <ImageView
+        android:id="@+id/mixi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart" />
+        <!--android:src="@drawable/mixi -->"
+
+
 
     <View
         android:layout_width="match_parent"
@@ -36,6 +45,16 @@
 
     </View>
 
+
+    <TextView
+        android:id="@+id/textoSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/buttoninverso"
+        android:text="¿No tienes cuenta? Crear una"
+        android:onClick="onClickSign"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
@@ -84,13 +103,15 @@
 
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
-        <Button
-            android:id="@+id/button"
-            android:text="Botón"
-            app:layout_constraintStart_toStartOf="@id/guideline2"
-            app:layout_constraintTop_toBottomOf="@id/til2"
-            app:layout_constraintEnd_toEndOf="@id/guideline3"
-            style="@style/boton" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/boton"
+        android:onClick="onClick"
+        android:text="Botón"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/til2" />
 
 
     <Button
