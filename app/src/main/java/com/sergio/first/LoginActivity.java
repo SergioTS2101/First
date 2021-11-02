@@ -21,12 +21,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         ImageView mixiGirl =findViewById(R.id.mixi);
 
         Glide.with(this)
 
                 .load(R.drawable.mixiiii)
-                .transition(DrawableTransitionOptions.withCrossFade(500))
+                .transition(DrawableTransitionOptions.withCrossFade(100))
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.purple_500)))
                 .into(mixiGirl);
     }
