@@ -4,16 +4,10 @@
 
     <alpha
         android:fromAlpha="0.0"
-        android:startOffset="1000"
         android:duration="1000"
         android:interpolator="@android:anim/accelerate_interpolator"
         android:toAlpha="1.0"/>
-    <scale
-        android:duration="2000"
-        android:fromXScale="2.0"
-        android:fromYScale="2.0"
-        android:toXScale="1.0"
-        android:toYScale="1.0" />
+
     <rotate
         android:startOffset="2000"
         android:duration="2000"
@@ -22,12 +16,11 @@
         android:pivotX="50%"
         android:pivotY="50%" />
     <translate
-        android:startOffset="4000"
-        android:duration="2000"
-        android:fromXDelta="0"
-        android:fromYDelta="0"
-        android:toXDelta="50"
-        android:toYDelta="100" />
+        android:startOffset="2000"
+        android:duration="3000"
+        android:fromYDelta="0%p"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:toYDelta="-20%p" />
 
 
 </set>
