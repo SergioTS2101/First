@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -17,6 +19,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 /**
  * @author Sergio Tomeo Samuel
+ * @author Marcosmartin16 ATR
  */
 public class LoginActivity extends AppCompatActivity {
     //EditText txt_usuario, txt_contraseña;
@@ -28,6 +31,10 @@ public class LoginActivity extends AppCompatActivity {
         //txt_usuario = (EditText)findViewById(R.id.username);
         //txt_contraseña = (EditText)findViewById(R.id.txtPassword);
         entrar = (Button)findViewById(R.id.button);
+
+        ImageView logo = findViewById(R.id.logo);
+        Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        logo.startAnimation(rotate);
 
         ImageView mixiPh =findViewById(R.id.mixi);
 
