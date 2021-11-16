@@ -3,6 +3,7 @@
 
     <style name="NoActionTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Modiico este tema en lo que ponga aquí-->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/darker_gray</item>
     </style>
     <style name="Theme.First" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
@@ -14,7 +15,12 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/darker_gray</item>
         <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent ="Widget.MaterialComponents.Light.ActionBar.Solid">
+        <item name="background">@color/pastelito</item>
     </style>
 </resources>

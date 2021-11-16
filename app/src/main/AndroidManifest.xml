@@ -19,7 +19,8 @@
         <activity
             android:name=".MainActivity"
             android:label="Main"
-            android:exported="false"/>
+            android:exported="false"
+            />
 
         <activity android:name=".SplashScreen"
             android:label="Splash"
