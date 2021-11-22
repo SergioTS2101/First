@@ -37,6 +37,11 @@
             android:exported="true"
             android:theme="@style/NoActionTheme">
         </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="true"
+            android:theme="@style/NoActionTheme">
+        </activity>
     </application>
 
 </manifest>
