@@ -1,22 +1,21 @@
 package com.sergio.first;
 
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.content.ClipData;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -138,7 +137,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item1:
-                startActivity(new Intent(this, SplashScreen.class));
+                onCreateD(MainActivity.this);
+                return true;
+           case R.id.item2:
+               onCreateDialog(MainActivity.this);
+             //   startActivity(new Intent(this, SplashScreen.class));
                 return true;
             case R.id.item3:
                 startActivity(new Intent(this, AboutUsActivity.class));
@@ -153,6 +156,57 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
 
         }
+    }
+
+    public void onCreateD (MainActivity view){
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+         builder.setTitle("Atención");
+         builder.setMessage("¿Desea volver al Login?");
+         //builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+
+         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+        dialog.dismiss();
+        }
+        });
+         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+        dialog.dismiss();
+        }
+        });
+
+         builder.setNeutralButton("Quizás más tarde", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+        dialog.dismiss();
+        }
+        });
+         AlertDialog dialog = builder.create();
+         dialog.show();
+    }
+
+    public void onCreateDialog (MainActivity view){
+
+        String [] array = new String[3];
+        array[0]="sergiots2101@gmail.com";
+        array[1]="sertomeo@ucm.es";
+        array[2]="mtomeo@ucm.es";
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+        alertDialog.setTitle("Seleccione un correo");
+        alertDialog.setItems(array, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
+
     }
 
 

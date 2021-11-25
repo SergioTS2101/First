@@ -20,6 +20,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 public class LoginActivity extends AppCompatActivity {
     //EditText txt_usuario, txt_contraseña;
     Button entrar;
+    Button volver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         //txt_usuario = (EditText)findViewById(R.id.username);
         //txt_contraseña = (EditText)findViewById(R.id.txtPassword);
         entrar = (Button)findViewById(R.id.button);
-
+        volver = (Button)findViewById(R.id.buttoninverso);
         ImageView logo = findViewById(R.id.logo);
         Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
         logo.startAnimation(rotate);
@@ -53,6 +54,16 @@ public class LoginActivity extends AppCompatActivity {
                 //}else{
                   //  Toast.makeText(getApplicationContext(),"Usuario o contraseña erróneos",Toast.LENGTH_SHORT);
                 //}
+            }
+        });
+
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }
