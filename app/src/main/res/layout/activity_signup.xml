@@ -52,10 +52,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="Nombre"
-                android:maxLines="1"
                 android:inputType="text"
                 android:padding="8dp"
-                android:textSize="14dp" />
+                android:textSize="20dp" />
 
             <EditText
                 android:id="@+id/editText2"
@@ -65,7 +64,8 @@
                 android:hint="Usuario"
                 android:inputType="text"
                 android:padding="8dp"
-                android:textSize="14dp" />
+                android:textSize="20dp"
+                android:maxLines="1" />
 
             <EditText
                 android:id="@+id/txtPassword"
@@ -75,7 +75,8 @@
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:padding="8dp"
-                android:textSize="14dp" />
+                android:textSize="20dp"
+                android:maxLines="1" />
 
             <CheckBox
                 android:id="@+id/checkBox"

@@ -45,7 +45,7 @@
         android:id="@+id/textoSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="1"
+        android:textSize="16dp"
         android:onClick="onClickSign"
         android:text="¿No tienes cuenta? Crear una"
         android:textColor="#FFFFFF"
@@ -73,6 +73,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/background_light"
             android:hint="Username"
+            android:textSize="20dp"
             android:maxLines="1">
 
         </EditText>
@@ -97,6 +98,7 @@
             android:background="@android:color/background_light"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textSize="20dp"
             android:maxLines="1">
 
         </EditText>

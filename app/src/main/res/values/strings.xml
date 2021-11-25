@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">First</string>
     <string name="signup_text">Have u got an account? Register</string>
+    <string  name="hint1"><font size="20">Nombre</font></string>
 </resources>
