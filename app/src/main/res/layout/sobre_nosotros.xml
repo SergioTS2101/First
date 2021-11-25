@@ -42,7 +42,7 @@
                 android:textSize="17dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:src="@drawable/Nieve"
+                android:src="@drawable/Nieve2"
                 android:layout_width="300dp"
                 android:layout_height="200dp"
                 android:scaleX="-1"
