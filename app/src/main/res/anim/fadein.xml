@@ -18,9 +18,9 @@
     <translate
         android:startOffset="2000"
         android:duration="3000"
-        android:fromYDelta="0%p"
+        android:fromYDelta="20%p"
         android:interpolator="@android:anim/linear_interpolator"
-        android:toYDelta="-20%p" />
+        android:toYDelta="-3%p" />
 
 
 </set>

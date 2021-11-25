@@ -9,6 +9,16 @@
     tools:context=".LoginActivity">
 
 
+
+
+
+    <ImageView
+        android:id="@+id/mixi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mixiiiiii"/>
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="80dp"
@@ -19,15 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/mixi"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitEnd" />
-        <!--android:src="@drawable/mixi -->"
-
 
 
     <View
@@ -44,6 +45,7 @@
         android:id="@+id/textoSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:onClick="onClickSign"
         android:text="¿No tienes cuenta? Crear una"
         android:textColor="#FFFFFF"
