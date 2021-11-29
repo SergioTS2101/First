@@ -3,33 +3,37 @@
 ### Enlace al repositorio de GitHub: https://github.com/SergioTS2101/First
 
 ## Demo de cómo funciona la app:
+
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/FirstGIF.gif)
 
 ## 1.Splash Screen 
+
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/First-Sergio.jpg)
 
 El código fuente se encuentra aquí:
 ### Java
-[java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SplashScreen.java)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SplashScreen.java)
 
 ### XML
-[res](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml)
 
 ## 2.Login Screen
 
 Tras haber visto el Splash Screen con su respectiva animación, el siguiente activity que se inicia es el Login Activity, el cual tiene este aspecto:
+
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/LoginScreen.png)
 
 El código fuente se encuentra aquí:
 ### Java 
-[java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/LoginActivity.java)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/LoginActivity.java)
 
 ### XML
-[res](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_login.xml)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_login.xml)
 
 ## 3.Main Screen
 Tras introducir un nombre de usuario y una contraseña, haciendo click sobre el botón de "entrar", 
 iremos al MainActivity, sobre la cual se desarrolla toda la actividad principal de la app.
+
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/MainEntrar.jpg)
 
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/Main1.png)
@@ -40,6 +44,7 @@ nuestra aplicación.
 Este en concreto, según refrescamos la ventana (hecho con un SwipeRefresh Layout), 
 nos cambia la imagen del vehículo en pantalla y nos aparece un *toast* que nos indica que la 
 imagen ha sido actualizada.
+
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/Main12.png)
 
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/Main11.png)
@@ -83,10 +88,10 @@ Seleccionamos *Sobre nosotros* y nos aparecerá lo siguiente:
 
 El código fuente se encuentra aquí:
 ### Java
-[java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/AboutUsActivity.java)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/AboutUsActivity.java)
 
 ### XML
-[res](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/sobre_nosotros.xml)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/sobre_nosotros.xml)
 
 Si por el contrario, elegimos *Crear cuenta*, nos aparecerá lo siguiente:
 
@@ -99,10 +104,10 @@ indica que hemos creado una cuenta nueva con éxito.
 
 El código fuente se encuentra aquí:
 ### Java
-[java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/MainActivity.java)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/MainActivity.java)
 
 ### XML
-[res](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_main.xml)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_main.xml)
 
 
 ## 4.Sign Up Screen
@@ -120,10 +125,10 @@ Después de haber rellenado los campos para crear una cuenta, si hacemos click s
 
 El código fuente se encuentra aquí:
 ### Java
-[java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SignUpActivity.java)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SignUpActivity.java)
 
 ### XML
-[res](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_signup.xml)
+[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_signup.xml)
 
 
 
