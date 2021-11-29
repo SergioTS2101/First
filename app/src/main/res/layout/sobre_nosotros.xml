@@ -45,8 +45,6 @@
                 android:src="@drawable/nieve2"
                 android:layout_width="300dp"
                 android:layout_height="200dp"
-                android:scaleX="-1"
-                android:scaleY="1"
                 />
 
             <Button
