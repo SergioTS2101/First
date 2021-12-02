@@ -2,6 +2,10 @@
 ## Voy a mostrar el resultado final de mi aplicación de la primera evaluación de la asignatura de Desarrollo de Interfaces, paso a paso.
 ### Enlace al repositorio de GitHub: https://github.com/SergioTS2101/First
 
+```diff
+
+
+
 ## **Índice:**
 
 1. [Demo](#demo)
@@ -19,7 +23,7 @@
 
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/First-Sergio.jpg)
 
-El código fuente se encuentra aquí:
+-El código fuente se encuentra aquí:
 ### Java
 [Java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SplashScreen.java)
 
@@ -29,7 +33,7 @@ El código fuente se encuentra aquí:
 ## 2.Login Activity<a name="LA"></a>
 
 
-Tras haber visto el Splash Screen con su respectiva animación, el siguiente activity que se inicia es el Login Activity, el cual tiene este aspecto:
++Tras haber visto el Splash Screen con su respectiva animación, el siguiente activity que se inicia es el Login Activity, el cual tiene este aspecto:
 
 ![Imagenes](https://github.com/SergioTS2101/First/blob/materialLogin/Imagenes/LoginScreen.png)
 
