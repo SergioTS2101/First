@@ -12,7 +12,7 @@
 
 El código fuente se encuentra aquí:
 ### Java
-[](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SplashScreen.java)
+[Java](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/java/com/sergio/first/SplashScreen.java)
 
 ### XML
 [](https://github.com/SergioTS2101/First/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml)
